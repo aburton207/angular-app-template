@@ -1,0 +1,23 @@
+<div class="alert" ng-class="[type ? 'alert-' + type : null]">
+  <button type="button" class="close" ng-if="dismissable" ng-click="$hide()">&times;</button>
+  <div class="strong" ng-bind="title"></div>
+  <div ng-bind-html="content"></div>
+
+  <div class="modal-body">
+   
+ 
+      <div class="strong">Terms of Use</div>
+      <p>
+       IHTSDO SNOMED CT Tools includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. “SNOMED”, “SNOMED CT” and “SNOMED Clinical Terms” are registered trademarks of the IHTSDO (www.ihtsdo.org)</p>
+<p>
+</p>
+Use of SNOMED CT in IHTSDO SNOMED CT Browser is governed by the conditions of the following SNOMED CT license issued by the IHTSDO:
+      </p>
+      
+
+  </div>
+  <div class="modal-footer">
+        <button type="button" class="btn btn-danger" ng-click="$hide()">Close</button>
+        <button type="button" class="btn btn-success" ng-click="$hide()">I agree</button>
+      </div>
+</div>

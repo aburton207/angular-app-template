@@ -1,6 +1,26 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "functions";
+@import "variables-colors";
+@import "variables";
+
+// ihtsdo theme
+@import "ihtsdo/base";
+@import "ihtsdo/sidebar";
+@import "ihtsdo/buttons";
+@import "ihtsdo/panels";
+@import "ihtsdo/tables";
+@import "ihtsdo/cards";
+@import "ihtsdo/forms";
+@import "ihtsdo/navbar";
+@import "ihtsdo/switch";
+@import "ihtsdo/scrollbar";
+@import "ihtsdo/timeline";
+@import "ihtsdo/theme";
+@import "ihtsdo/zdepth";
+@import "ihtsdo/alert";
+@import "ihtsdo/additions";
 // endbower
 
 .browsehappy {

@@ -1,0 +1,63 @@
+// Reusable
+@import "functions";
+@import "variables-colors";
+@import "variables";
+
+
+// Font
+@import "app/bower_components/roboto-fontface/css/roboto-fontface";
+@import "app/bower_components/font-awesome/scss/font-awesome";
+
+// Bootstrap
+@import "app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bootstrap-overrides";
+
+// ihtsdo theme
+@import "ihtsdo/base";
+@import "ihtsdo/sidebar";
+@import "ihtsdo/buttons";
+@import "ihtsdo/panels";
+@import "ihtsdo/tables";
+@import "ihtsdo/cards";
+@import "ihtsdo/forms";
+@import "ihtsdo/navbar";
+@import "ihtsdo/switch";
+@import "ihtsdo/scrollbar";
+@import "ihtsdo/timeline";
+@import "ihtsdo/theme";
+@import "ihtsdo/zdepth";
+@import "ihtsdo/alert";
+@import "ihtsdo/additions";
+// Apps
+@import "apps/todo";
+
+// Directives
+@import "directives/todo-widget";
+@import "directives/c3";
+
+// page specific
+@import "pages/dashboard";
+@import "pages/colors";
+@import "pages/full-map";
+@import "pages/grid";
+@import "pages/icons";
+@import "pages/tables";
+@import "pages/vector-map";
+
+// Standalone pages
+@import "pages/standalone/all";
+
+// Plugins
+@import "plugins/jquery.nouislider";
+@import "plugins/select2";
+@import "plugins/aside";
+@import "plugins/fsm-sticky-header";
+
+// Animations
+@import "animate-scss";
+@import "animations/all";
+
+// Themes & colors
+@import "ihtsdo/colors";
+@import "ihtsdo/themes";
+@import "ihtsdo/theme-picker";

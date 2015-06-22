@@ -21,22 +21,26 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="angularAppTemplateApp">
+
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <header class="header">
-        <div ng-include="'shared/partials/header.html'"></div>  
-    </header>
-
-    <div class="container">
-    <div ng-view=""></div>
+<body ng-app="angularAppTemplateApp" scroll-spy id="top" ng-class="[theme.template, theme.color]">
+  <main>
+    <div ng-include src="'shared/partials/sidebar.html'"></div>
+    <div class="main-container">
+      <div ng-include src="'shared/partials/header.html'"></div>
+      <div class="main-content" autoscroll="true" ng-cloak ng-view bs-affix-target></div>
     </div>
+  </main>
+    <!-- Add your site or application content here -->
+ 
     <!--Footer To be included here:-->
     <div ng-include="shared/partials/footer.html">
     </div>
+    <!-- Add your site or application content here -->
+   
+  
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -47,6 +51,7 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -87,5 +92,36 @@
         <script src="components/about/about.js"></script>
         <script src="components/home/home.js"></script>
         <!-- endbuild -->
+          <script charset="utf-8" src="shared/directives/formcontrol.js"></script>
+  <script charset="utf-8" src="shared/directives/navbar-hover.js"></script>
+  <script charset="utf-8" src="shared/directives/navbar-search.js"></script>
+  <script charset="utf-8" src="shared/directives/noui-slider.js"></script>
+  <script charset="utf-8" src="shared/directives/menu-link.js"></script>
+  <script charset="utf-8" src="shared/directives/menu-toggle.js"></script>
+
+  <script charset="utf-8" src="shared/directives/autofocus.js"></script>
+  <script charset="utf-8" src="shared/directives/scroll-spy.js"></script>
+
+  <script charset="utf-8" src="shared/services/color-service.js"></script>
+
+
+
+  <script charset="utf-8" src="shared/controllers/dashboard.js"></script>
+  <script charset="utf-8" src="shared/controllers/charts.js"></script>
+  <script charset="utf-8" src="shared/controllers/colors.js"></script>
+  <script charset="utf-8" src="shared/controllers/lists.js"></script>
+
+  <script charset="utf-8" src="shared/controllers/forms.js"></script>
+  <script charset="utf-8" src="shared/controllers/upload.js"></script>
+  <script charset="utf-8" src="shared/controllers/tables/basic.js"></script>
+  <script charset="utf-8" src="shared/controllers/tables/data.js"></script>
+  
+    <script charset="utf-8" src="shared/vendors/angular-placeholders.js"></script>
+  <script charset="utf-8" src="shared/vendors/side-nav.js"></script>
+  <script charset="utf-8" src="shared/vendors/ripples.js"></script>
+  <script charset="utf-8" src="shared/vendors/init-ripples.js"></script>
+  <script charset="utf-8" src="shared/vendors/fsm-sticky-header.js"></script>
+  <script charset="utf-8" src="shared/vendors/angular-smooth-scroll.js"></script>
+
 </body>
 </html>

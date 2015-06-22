@@ -15,17 +15,21 @@
     <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.min.css" />
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
     <link rel="stylesheet" href="bower_components/c3/c3.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-additions/dist/bootstrap-additions.css" />
+    <link rel="stylesheet" href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.css" />
+    <link rel="stylesheet" href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="shared/ihtsdo.css">
     <!-- endbuild -->
   </head>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<body ng-app="angularAppTemplateApp" scroll-spy id="top" ng-class="[theme.template, theme.color]">
+<body ng-app="angularAppTemplateApp" scroll-spy id="top" ng-class="[theme.template, theme.color]" class="theme-template-dark theme-blue">
   <main>
     <div ng-include src="'shared/partials/sidebar.html'"></div>
     <div class="main-container">
@@ -33,6 +37,7 @@
       <div class="main-content" autoscroll="true" ng-cloak ng-view bs-affix-target></div>
     </div>
   </main>
+  
     <!-- Add your site or application content here -->
  
     <!--Footer To be included here:-->
@@ -84,11 +89,17 @@
     <script src="bower_components/d3/d3.js"></script>
     <script src="bower_components/c3/c3.js"></script>
     <script src="bower_components/c3-angular/c3js-directive.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+    <script src="bower_components/arrive/src/arrive.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="components/app.js"></script>
+         <script src="components/filters.js"></script>
+          <script charset="utf-8" src="shared/colors.js"></script>
         <script src="components/about/about.js"></script>
         <script src="components/home/home.js"></script>
         <!-- endbuild -->
@@ -110,7 +121,7 @@
   <script charset="utf-8" src="shared/controllers/charts.js"></script>
   <script charset="utf-8" src="shared/controllers/colors.js"></script>
   <script charset="utf-8" src="shared/controllers/lists.js"></script>
-
+ <script charset="utf-8" src="shared/controllers/main.js"></script>
   <script charset="utf-8" src="shared/controllers/forms.js"></script>
   <script charset="utf-8" src="shared/controllers/upload.js"></script>
   <script charset="utf-8" src="shared/controllers/tables/basic.js"></script>
@@ -118,8 +129,7 @@
   
     <script charset="utf-8" src="shared/vendors/angular-placeholders.js"></script>
   <script charset="utf-8" src="shared/vendors/side-nav.js"></script>
-  <script charset="utf-8" src="shared/vendors/ripples.js"></script>
-  <script charset="utf-8" src="shared/vendors/init-ripples.js"></script>
+
   <script charset="utf-8" src="shared/vendors/fsm-sticky-header.js"></script>
   <script charset="utf-8" src="shared/vendors/angular-smooth-scroll.js"></script>
 

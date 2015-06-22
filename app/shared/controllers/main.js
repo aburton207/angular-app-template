@@ -1,38 +1,15 @@
 angular.module('angularAppTemplateApp')
 .controller('MainController',
-  ['$scope', '$animate', 'localStorageService', 'todoService', '$alert', '$timeout',
-  function($scope, $animate, localStorageService, todoService, $alert, $timeout){
+  ['$scope', '$animate', 'localStorageService', '$alert', '$timeout',
+  function($scope, $animate, localStorageService, $alert, $timeout){
 
-  if (typeof(browser_old) == "undefined"){
-    initRipplesWithArrive();
-
-    $(document).arrive('.navbar-toggle', function() {
-      $(this).sideNav({menuWidth: 260, closeOnClick: true});
-    });
-  }
 
   $scope.theme_colors = [
     'blue',
     'light-blue'
   ];
 
-  // Add todoService to scope
-  service = new todoService($scope);
-  $scope.todosCount = service.count();
-  $scope.$on('todos:count', function(event, count) {
-    $scope.todosCount = count;
-    element = angular.element('#todosCount');
 
-    if ( !element.hasClass('animated') ){
-      $animate.addClass(element, 'animated bounce', function() {
-        $animate.removeClass(element, 'animated bounce');
-      });
-    }
-  });
-
-  $scope.fillinContent = function(){
-    $scope.htmlContent = 'content content';
-  };
 
   // theme changing
   $scope.changeColorTheme = function(cls){
@@ -58,7 +35,7 @@ angular.module('angularAppTemplateApp')
     placement: 'top',
     type: 'theme',
     show: false,
-    template: 'assets/tpl/partials/alert-introduction.html',
+    template: 'shared/partials/alert-introduction.html',
     animation: 'mat-grow-top-right'
   });
 

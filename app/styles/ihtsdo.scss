@@ -1,15 +1,15 @@
 // Reusable
+@import "compass/css3";
 @import "functions";
 @import "variables-colors";
 @import "variables";
 
 
 // Font
-@import "app/bower_components/roboto-fontface/css/roboto-fontface";
-@import "app/bower_components/font-awesome/scss/font-awesome";
+@import "../bower_components/roboto-fontface/css/roboto-fontface";
+@import "../bower_components/font-awesome/scss/font-awesome";
 
 // Bootstrap
-@import "app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "bootstrap-overrides";
 
 // ihtsdo theme
@@ -53,9 +53,7 @@
 @import "plugins/aside";
 @import "plugins/fsm-sticky-header";
 
-// Animations
-@import "animate-scss";
-@import "animations/all";
+
 
 // Themes & colors
 @import "ihtsdo/colors";

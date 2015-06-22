@@ -51,6 +51,10 @@ module.exports = function(config) {
       'bower_components/d3/d3.js',
       'bower_components/c3/c3.js',
       'bower_components/c3-angular/c3js-directive.js',
+      'bower_components/angular-local-storage/dist/angular-local-storage.js',
+      'bower_components/angular-strap/dist/angular-strap.js',
+      'bower_components/angular-strap/dist/angular-strap.tpl.js',
+      'bower_components/arrive/src/arrive.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/components/*.js",

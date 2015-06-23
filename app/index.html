@@ -29,7 +29,7 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<body ng-app="angularAppTemplateApp" scroll-spy id="top" ng-class="[theme.template, theme.color]" class="theme-template-dark theme-blue">
+<body ng-app="angularAppTemplateApp" scroll-spy id="top" class="theme-template-dark theme-blue">
   <main>
     <div ng-include src="'shared/partials/sidebar.html'"></div>
     <div class="main-container">
@@ -99,9 +99,10 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="components/app.js"></script>
          <script src="components/filters.js"></script>
-          <script charset="utf-8" src="shared/colors.js"></script>
+
         <script src="components/about/about.js"></script>
         <script src="components/home/home.js"></script>
+        
         <!-- endbuild -->
           <script charset="utf-8" src="shared/directives/formcontrol.js"></script>
   <script charset="utf-8" src="shared/directives/navbar-hover.js"></script>
@@ -110,24 +111,10 @@
   <script charset="utf-8" src="shared/directives/menu-link.js"></script>
   <script charset="utf-8" src="shared/directives/menu-toggle.js"></script>
 
-  <script charset="utf-8" src="shared/directives/autofocus.js"></script>
-  <script charset="utf-8" src="shared/directives/scroll-spy.js"></script>
-
-  <script charset="utf-8" src="shared/services/color-service.js"></script>
 
 
 
-  <script charset="utf-8" src="shared/controllers/dashboard.js"></script>
-  <script charset="utf-8" src="shared/controllers/charts.js"></script>
-  <script charset="utf-8" src="shared/controllers/colors.js"></script>
-  <script charset="utf-8" src="shared/controllers/lists.js"></script>
- <script charset="utf-8" src="shared/controllers/main.js"></script>
-  <script charset="utf-8" src="shared/controllers/forms.js"></script>
-  <script charset="utf-8" src="shared/controllers/upload.js"></script>
-  <script charset="utf-8" src="shared/controllers/tables/basic.js"></script>
-  <script charset="utf-8" src="shared/controllers/tables/data.js"></script>
-  
-    <script charset="utf-8" src="shared/vendors/angular-placeholders.js"></script>
+
   <script charset="utf-8" src="shared/vendors/side-nav.js"></script>
 
   <script charset="utf-8" src="shared/vendors/fsm-sticky-header.js"></script>

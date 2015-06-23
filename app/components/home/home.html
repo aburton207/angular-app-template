@@ -1,5 +1,51 @@
-<div class="row col-md-12">
-    <div class="jumbotron">
-        <h1>Home View!</h1>
-    </div>
+<section ng-controller="HomeCtrl">
+
+  <div class="page-header">
+    <h1>
+     Dashboard
+    </h1>
+  
+  </div>
+
+  <div class="row m-b-40">
+
+
+    <div class="col-md-12">
+      <div class="card no-margin">
+
+          <div class="table-responsive white">
+          <h3 class="table-title p-20">My Tasks</h3>
+     <table ng-table="tableParams" class="table table-hover table-full table-full-small">
+
+
+            <tr ng-repeat="user in $data">
+                <td data-title="'Name'" sortable="'name'">
+                    {{user.name}}
+                </td>
+                <td data-title="'Project'" sortable="'project'">
+                    {{user.project}}
+                </td>
+                  <td data-title="'Last Modified'" sortable="'modified'">
+                    {{user.modified | date: "yyyy-MM-dd"}}
+                </td>
+                   <td data-title="'Classification Results'" sortable="'classification'">
+                    {{user.classification}}
+                </td>
+            
+                   <td data-title="'Feedback'" sortable="'feedback'" >
+                {{user.feedback}}
+                </td>
+                   <td data-title="'Status'" sortable="'status'">
+                    {{user.status}}
+                </td>
+                
+            </tr>
+        </table>
 </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
